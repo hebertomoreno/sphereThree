@@ -58,13 +58,13 @@ var addSphere = function() {
 	//Radius
 	//widthSegments
 	//HeightSegments
-	var geometry = new THREE.SphereGeometry(2, 32, 32);
+	var geometry = new THREE.SphereGeometry(2, 200, 200);
 
 	//Add a basic material
 	//var material = new THREE.MeshNormalMaterial( {color: 0x0054A6} );
-	var material = new THREE.MeshPhongMaterial( {
-						color: 0xFFFFFF,
-						emissive: 0x072534,
+	var material = new THREE.MeshLambertMaterial( {
+						color: 0x78989b,
+						emissive: 0x78989b,
 						side: THREE.DoubleSide,
 						shading: THREE.FlatShading,
 						map: texture
